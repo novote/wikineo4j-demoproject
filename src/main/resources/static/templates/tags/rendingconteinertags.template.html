@@ -1,0 +1,117 @@
+<div id = "rendingconteinertagsset"  name="rendingconteinertagsset"> 
+                         
+       
+       
+        <div class="row"> 
+ 
+    
+         <div class="col-md-12">  
+          	
+           
+         {{#numFindedTags}} <p>Found  {{numFindedTags}} the  relevant definition  for search word {{searchWord}}. </p> {{/numFindedTags}}
+      
+          {{#countSavedtag}}  {{countSavedtag}} THE WIKI DEFINITION   SUCCESS SAVED! {{/countSavedtag}}
+          {{^countSavedtag}} DUPLICATION, TAGS EXISTED IN DATABASE. {{/countSavedtag}}
+            {{numFindedTags}} <p>Found  {{numFindedTags}} the  relevant definition  for search word {{searchWord}}. </p> {{/numFindedTags}}
+          <br> 
+          <br>
+         <div class="card-columns">
+         
+         
+         
+               
+        {{#savedtags}}  
+			    <div class="card-primary"  id="prcadr">
+                    <div class="card-header">
+                       <h4> {{title}} </h4> 
+                    </div> 
+                
+                       <p class="card-body">
+              
+                       <br/>
+        			 <span id="contentText_{{contentId}}">{{text}}</span>
+                            
+                      
+                        </p>
+                  
+                      <div class="card-footer">
+                      <span id="contentText_{{contentId}}">Posted by <h6>{{authorName}}</h6></span>
+                   
+                  
+                     </div>  
+			     <br>
+    {{/savedtags}}
+         
+         </div>
+         
+    
+       
+       
+          </div> 
+       
+  
+         </div> 
+     
+       
+
+			<br/>	
+			<br/>
+			<br/>
+		  {{#findedTagsHeader}}
+			
+			SELECT RELEVANT TAGS TO SAVE THE WIKI DEFINITION IN THE NEO4J DATABASE    <button type="submit" id="tagSaveToBase" name="tagSaveToBase" class="btn btn-default" >SAVE TAGS</button>
+			<br/>
+			<br/>
+			<br/>
+			
+			
+			 	<table class="table table-striped" id="relwikitagstable">
+	     
+	        	    <tr>
+	              
+	                 <th>Name</th>
+	                 <th>Definition</th>
+	                 <th>Edit</th>
+  
+                   </tr>
+          {{/findedTagsHeader}}         
+                   {{#findedTags}}
+	        		<tr id="_{{contentId}}">
+	        		
+	        		    
+	        	    
+	        	    	
+        				 <td class="ctitle">
+        				    
+        					 <span id="title">{{title}}</span>
+                            
+        			    </td>
+        				<td class="ctext">
+        				 
+        					 <span id="text">{{text}}</span> 
+        					
+        					
+        				</td>
+        				<td>
+        			    	
+        				      <a href='javascript:void(0);' class='tr'>&times;Delete</a>  <br/>
+        					
+        				</td>
+        				
+        				
+        				
+	        		</tr>
+	        	{{/findedTags}}
+	        
+			    </table>
+      
+			
+			
+		
+			
+			
+			
+				
+				
+                            
+  </div>  

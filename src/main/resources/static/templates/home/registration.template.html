@@ -1,0 +1,118 @@
+
+<div class="global/base-app-4bs">
+  {{> global/base-app-4bs}}
+</div>
+
+       
+       <!--bootstrap  4 css   -->
+       <link href="{{{resources}}}/core/js/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
+       <!-- custom css -->  
+       <link href="{{{resources}}}/core/css/examples.css" rel="stylesheet"> 
+       <!-- Our Custom CSS slide nav  bar -->
+       <link rel="stylesheet" href="{{{resources}}}/core/css/style5.css">
+
+
+
+
+    <div class="wrapper">
+        
+            
+                <div class="container">
+                    <div class="row">
+                    
+     
+                    
+                       <div class="col-md-4 col-lg-4"> 
+                       </div>
+                      
+                        
+                           <div class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-xl-offset-4">-->
+                             <div class="col-md-4 col-lg-4"> 
+                            </div>  
+                       
+                            <div class="card card-register">
+                                <h3 class="title">Welcome</h3>
+								<div class="social-line text-center">
+                                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                    <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+									<a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
+										<i class="fa fa-twitter"></i>
+									</a>
+                                </div>
+                                    <!-- class="register-form"  action="/user/registration"-->
+                                <form  id="formRegUser" action="/registration/user" method="post" role="form" class="form-signin">
+                                
+                                
+                                      {{#nikeNameError}}
+						                   <h3 class="title"> {{nikeNameError}}</h3>
+						              {{/nikeNameError}}
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" id="userNikeName" name="userNikeName"  placeholder="Name">
+                                    
+                                    
+                                     {{#emailError}}
+						                   <h3 class="title"> {{emailError}}</h3>
+						              {{/emailError}}
+                                    <label>Email</label>
+                                    <input type="text" class="form-control" id="userEmail" name="userEmail"  placeholder="Email">
+
+                                    <label>Pass</label>
+                                    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Pass">
+                                    
+                                    
+                                      {{#passError}}
+						                   <h3 class="title"> {{passError}}</h3>
+						              {{/passError}}
+                                    <label>Pass</label>
+                                    <input type="password" class="form-control" id="userPasswordConfirm" name="userPasswordConfirm"  placeholder="Pass">
+                                    
+                                    <input type="hidden" id="_csrf" name="_csrf" value="{{token}}"/>  
+                                    </br>
+                                    <button type="submit" id="btnRegUser" class="btn btn-default" >Register</button>
+                                </form>
+                                <div class="forgot">
+                                    <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                 
+                </div>
+       
+    </div>
+
+
+  
+  
+       
+  
+ 
+  
+
+
+
+
+
+        <script type="text/javascript" src="resources/core/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{{{resources}}}/core/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="{{{resources}}}/core/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="resources/core/js/jquery.form.js"></script>
+        <script type="text/javascript" src="resources/core/js/jquery.validate.js"></script>
+        
+        
+        <!--    -->
+        <script type="text/javascript" src="resources/core/js/graphSignUp.js"></script>
+         <script type="text/javascript" src="{{{resources}}}/core/js/graphSignUp.js"></script>
+       
+       
+     
+    
+     
+  

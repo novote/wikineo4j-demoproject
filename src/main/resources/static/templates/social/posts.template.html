@@ -1,0 +1,157 @@
+
+   <div class="global/base-app-4bs">
+     {{ > global/base-app-4bs}}
+  </div>
+  
+  
+
+    
+       <!--bootstrap  4 css  -->   
+       <link href="{{{resources}}}/core/js/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
+      
+      
+       <link rel="stylesheet" href="{{{resources}}}/core/js/lib/select2-3.5.4/select2.css" />
+       <link rel="stylesheet" href="{{{resources}}}/core/js/lib/select2-3.5.4/select2-bootstrap.css" />
+       
+        <!-- custom css -->  
+       <link href="{{{resources}}}/core/css/examples.css" rel="stylesheet">
+         
+   
+    
+      
+   
+           <div class="form-box"  id="cf2019"> 
+           
+          <div id="contentfrend"> 
+          <div class="row">
+          <div class="col-md-12">
+<tr>
+    <p>The web app  to scrap the wikipedia pages to get word  definitions for tags database </p>
+</tr>
+	
+    <div class="container-mycon">
+      	<div class="row">
+      	
+        	<div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 ">
+        	
+			</div>
+        	<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 ">
+	        	<h3>Get Wiki Word Definition</h3>
+	        	
+	        		    
+	        	<form  action="/tags/search"  id="tagSearchFormByPageName" method="post" enctype="multipart/form-data" >
+                <div class="row">
+				      <div class="container">
+				    <input type="hidden" id="_csrf" name="_csrf" value="{{token}}"/> 
+				  
+				     <div class=" col-xl-11  col-lg-11 col-md-11 col-sm-11">
+				           <h6>Search by Wikipedia page name </h6> 
+				           <p>
+				           <h8>  Ex. For scrap  https://en.wikipedia.org/wiki/neo4j   set in form only the last  part of path neo4j</h8> 
+				      <span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+               
+				      <div class="form-group has-success">
+            	        	 <input type="text" class="form-control col-lg-11 itemSearch" id="wikipagename" name="wikipagename" size="350"> 
+				      </div> 
+				  
+				  </div>
+				   <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+				   
+				   <span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+                  <div class="form-group">
+				   
+				      <button type="submit" id="tagSearchFormByPageNameBtn" name="tagSearchFormByPageNameBtn" class="btn btn-default">Search</button>
+				   
+				  </div>
+				  </div>
+				  
+				  
+				  </div>
+				      </div>
+				</form>  
+				  
+				   
+				    	
+				<table class="table" id="userstoadd">
+					
+				</table>
+        	
+        	
+         <div id = "rendingconteinertagsset"  name="rendingconteinertagsset" >
+               
+        	   
+        	    
+    
+				
+                            
+        </div>  <!--  rendCont -->        
+        	    
+        	    
+        	           
+         
+         
+         
+         
+         
+         
+         
+ 
+
+             
+        	   
+
+      
+             </div>
+             
+             
+             
+              
+             
+		    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+       
+			
+			</div>
+      	</div>
+      	
+      	
+      	</div>
+      	</div>
+      	
+      	</div>
+      	</div>
+      	</div>
+    
+     
+      	
+
+ 
+
+	
+
+           
+         
+      	 
+      	 
+      	 
+  	
+      <script type="text/javascript" src="{{{resources}}}/core/js/jquery-3.2.1.min.js"></script>	
+
+    
+      <script type="text/javascript" src="{{{resources}}}/core/js/bootstrap-4.0.0/js/bootstrap.min.js"></script> 
+      <script type="text/javascript" src="{{{resources}}}/core/js/bootstrap-4.0.0/js/bootstrap.bundle.min.js"></script> 
+      <script type="text/javascript" src="{{{resources}}}/core/js/bootstrap-4.0.0/js/bootstrap.bundle.js"></script> 
+   
+      <script type="text/javascript" src="{{{resources}}}/core/js/jquery-ui-1.12.12/jquery-ui.js"></script>
+      <script type="text/javascript" src="{{{resources}}}/core/js/jquery-ui-themes-1.12.1/themes/base/jquery-ui.css"></script>
+      
+      <script type="text/javascript" src="{{{resources}}}/core/js/jquery.form.js"></script>
+      <script type="text/javascript" src="{{{resources}}}/core/js/jquery.validate.js"></script>
+      <script type="text/javascript" src="{{{resources}}}/core/js/lib/select2-3.5.4/select2.js" ></script>  <!-- turiger links work only with  this script -->
+      
+      <script type="text/javascript" src="{{{resources}}}/core/js/graphstory.js"></script>
+       <script type="text/javascript" src="{{{resources}}}/core/js/tagsscript.js"></script>
+       
+       
+       
+      
+
